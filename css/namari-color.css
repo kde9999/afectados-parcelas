@@ -60,8 +60,13 @@ a:hover, #header.nav-solid nav a:hover {
 
 /* Navigation Colors when the Navigation is sticky and solid */ 
 
+#header.nav-solid {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
 #header.nav-solid, #header.nav-solid a, #header.nav-solid i, #nav-mobile ul li a {
-    color:#333;
+    color: #333;
 }
 
 

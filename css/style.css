@@ -2868,3 +2868,238 @@ blockquote {
     cursor: pointer;
   }
 }
+
+/* Estilos para la sección de Procedimiento de Ingreso */
+.procedimiento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.procedimiento-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 30px 25px;
+  box-shadow: 0 4px 24px rgba(185, 45, 45, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(185, 45, 45, 0.1);
+  text-align: left;
+}
+
+.procedimiento-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 32px rgba(185, 45, 45, 0.15);
+  border-color: rgba(185, 45, 45, 0.2);
+}
+
+.procedimiento-icon {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.procedimiento-icon i {
+  color: #b92d2d;
+  background: rgba(185, 45, 45, 0.1);
+  border-radius: 50%;
+  padding: 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.procedimiento-card:hover .procedimiento-icon i {
+  background: #b92d2d;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.procedimiento-content h4 {
+  color: #b92d2d;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.procedimiento-content p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.procedimiento-cta {
+  background: linear-gradient(135deg, #fff 60%, #fbeaea 100%);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(185, 45, 45, 0.10);
+  padding: 40px 30px;
+  margin-top: 50px;
+  border: 1px solid rgba(185, 45, 45, 0.1);
+}
+
+.cta-content {
+  text-align: center;
+}
+
+.cta-content h3 {
+  color: #b92d2d;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.cta-content p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.cta-content .button {
+  background: #b92d2d;
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(185, 45, 45, 0.2);
+  border: 2px solid #b92d2d;
+}
+
+.cta-content .button:hover {
+  background: #fff;
+  color: #b92d2d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(185, 45, 45, 0.3);
+}
+
+/* Responsive design para la sección de procedimiento */
+@media (max-width: 768px) {
+  .procedimiento-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 30px 0;
+  }
+  
+  .procedimiento-card {
+    padding: 25px 20px;
+  }
+  
+  .procedimiento-content h4 {
+    font-size: 1.2rem;
+  }
+  
+  .procedimiento-content p {
+    font-size: 0.9rem;
+  }
+  
+  .procedimiento-cta {
+    padding: 30px 20px;
+    margin-top: 30px;
+  }
+  
+  .cta-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .cta-content p {
+    font-size: 1rem;
+  }
+  
+  .cta-content .button {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .procedimiento-card {
+    padding: 20px 15px;
+  }
+  
+  .procedimiento-icon i {
+    padding: 15px;
+    font-size: 1.5rem !important;
+  }
+  
+  .procedimiento-content h4 {
+    font-size: 1.1rem;
+  }
+  
+  .procedimiento-content p {
+    font-size: 0.85rem;
+  }
+  
+  .procedimiento-cta {
+    padding: 25px 15px;
+  }
+  
+  .cta-content h3 {
+    font-size: 1.3rem;
+  }
+  
+  .cta-content p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Estilos para el botón del formulario en el paso 4 */
+.formulario-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.formulario-button {
+  display: inline-flex;
+  align-items: center;
+  background: #b92d2d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(185, 45, 45, 0.2);
+  border: 2px solid #b92d2d;
+}
+
+.formulario-button:hover {
+  background: #fff;
+  color: #b92d2d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(185, 45, 45, 0.3);
+}
+
+.formulario-button i {
+  margin-right: 8px;
+  font-size: 0.8rem;
+}
+
+/* Responsive para el botón del formulario */
+@media (max-width: 768px) {
+  .formulario-button {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+  
+  .formulario-button i {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .formulario-button {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+  }
+  
+  .formulario-button i {
+    font-size: 0.7rem;
+  }
+}
